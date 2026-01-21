@@ -1,4 +1,6 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {section}{\numberline {1}Introducción}{2}{}%
 \contentsline {section}{\numberline {2}Descripcion del problema}{3}{}%
-\contentsline {section}{\numberline {3}Conclusión}{3}{}%
+\contentsline {section}{\numberline {3}Requisitos}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Requisitos funcionales}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Requisitos no funcionales}{4}{}%
