@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.chat_grupal.ChatController"
+      style="-fx-padding: 10;">
+
+    <ScrollPane fx:id="scrollPane" fitToWidth="true" prefHeight="500">
+        <VBox fx:id="mensajesBox" spacing="5" style="-fx-padding: 5;"/>
+    </ScrollPane>
+
+    <HBox spacing="10">
+        <TextField fx:id="campoMensaje" onAction="#enviar"
+                   promptText="Mensaje..." HBox.hgrow="ALWAYS"/>
+        <Button text="Enviar" onAction="#enviar"/>
+    </HBox>
+
+</VBox>

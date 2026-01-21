@@ -1,0 +1,39 @@
+.root {
+    -fx-background-color: #e5ddd5;
+    -fx-padding: 10;
+    -fx-font-size: 16px;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.msg-propio {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-padding: 10;
+    -fx-background-radius: 15;
+    -fx-border-color: #27ae60;
+    -fx-border-width: 2;
+    -fx-wrap-text: true;
+    -fx-font-size: 16px;
+}
+
+.msg-ajeno {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: black;
+    -fx-padding: 10;
+    -fx-background-radius: 15;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 2;
+    -fx-wrap-text: true;
+    -fx-font-size: 16px;
+}
+
+.msg-sistema {
+    -fx-background-color: #27ae60;
+    -fx-text-fill: white;
+    -fx-padding: 10;
+    -fx-background-radius: 15;
+    -fx-border-color: #27ae60;
+    -fx-border-width: 2;
+    -fx-wrap-text: true;
+    -fx-font-size: 16px;
+}
