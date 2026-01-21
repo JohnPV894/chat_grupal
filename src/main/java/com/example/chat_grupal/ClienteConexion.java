@@ -8,19 +8,19 @@ import java.util.function.Consumer;
 public class ClienteConexion {
 
     private PrintWriter salida;
+    private String nombreUsuario;
 
     public ClienteConexion(Consumer<String> onMensaje) {
         try {
             Socket socket = new Socket("localhost", 8080);
-            BufferedReader entrada = new BufferedReader(
-                    new InputStreamReader(socket.getInputStream()));
+            BufferedReader entrada = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             salida = new PrintWriter(socket.getOutputStream(), true);
 
             new Thread(() -> {
                 try {
-                    String msg;
-                    while ((msg = entrada.readLine()) != null) {
-                        String m = msg;
+                    String mensaje;
+                    while ((mensaje = entrada.readLine()) != null) {
+                        String m = mensaje;
                         Platform.runLater(() -> onMensaje.accept(m));
                     }
                 } catch (IOException ignored) {}
@@ -33,5 +33,9 @@ public class ClienteConexion {
 
     public void enviar(String msg) {
         salida.println(msg);
+    }
+
+    public void setNombreUsuario(String nombre) {
+        this.nombreUsuario = nombre;
     }
 }

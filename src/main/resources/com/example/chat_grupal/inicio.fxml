@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" spacing="15" style="-fx-padding: 30;" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.chat_grupal.InicioControlador">
+    
+    <Label text="Ingresa tu nombre:" style="-fx-font-size: 18;"/>
+    <TextField fx:id="campoNombre" promptText="Tu nombre aquí..." onAction="#ingresarChat"/>
+    <Button text="Entrar al Chat" onAction="#ingresarChat" style="-fx-padding: 10;"/>
+    
+</VBox>
