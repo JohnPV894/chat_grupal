@@ -88,13 +88,59 @@ Como desarrolladores independientes, hemos sido contactados por una empresa del 
 \clearpage
 
 \section{Requisitos}
-Final del trabajo.
-
+Requisitos funcionales: \\
+Definen las acciones y servicios que el sistema debe proporcionar. Especifican qué hace la aplicación, como las funcionalidades disponibles para el usuario, los procesos que realiza y la forma en que responde a determinadas acciones.
+\\\\
+Requisitos no funcionales:\\
+Describen las cualidades y restricciones del sistema. Indican cómo debe funcionar la aplicación, incluyendo aspectos como el rendimiento, la seguridad, la usabilidad, la compatibilidad o la fiabilidad.
+\\
 \subsection{Requisitos funcionales}
-Información adicional.
+\begin{itemize}
+    \item Permitir a los usuarios registrarse con un nombre de usuario único.
+    \item Facilitar el inicio de sesión para usuarios registrados.
+    \item Opción de restablecer la contraseña a través del correo electrónico.
+    \item Interfaz para enviar y recibir mensajes en tiempo real.
+    \item Capacidad de crear y gestionar grupos de chat.
+    \item Funcionalidad para enviar archivos y imágenes.
+    \item Notificaciones de mensajes nuevos.
+    \item Cierre de sesión seguro.
+\end{itemize}
 
 \subsection{Requisitos no funcionales}
-informacion adicional
+\begin{itemize}
+    \item Seguridad: Los datos del usuario y los mensajes deben estar cifrados.
+    \item Escalabilidad: El sistema debe manejar un aumento en el número de usuarios sin degradar el rendimiento.
+    \item Disponibilidad: El servicio debe estar operativo 24/7 con un tiempo de inactividad mínimo.
+    \item Rendimiento: Los mensajes deben ser entregados en menos de un segundo.
+    \item Usabilidad: La interfaz debe ser intuitiva y fácil de usar.
+\end{itemize}
+\clearpage
 
+\section{Casos de uso}
+\begin{itemize}
+    \item \textbf{Registro de usuario:} Un nuevo usuario se registra proporcionando un nombre de usuario y una contraseña.
+    \item \textbf{Inicio de sesión:} Un usuario existente ingresa con sus credenciales para acceder a su cuenta.
+    \item \textbf{Restablecimiento de contraseña:} Un usuario que olvidó su contraseña solicita un restablecimiento a través de su correo electrónico.
+    \item \textbf{Envío de mensajes:} Un usuario envía un mensaje a otro usuario o a un grupo.
+    \item \textbf{Recepción de mensajes:} Un usuario recibe un mensaje de otro usuario o de un grupo.
+    \item \textbf{Creación de grupos:} Un usuario crea un nuevo grupo de chat e invita a otros usuarios a unirse.
+    \item \textbf{Gestión de perfil:} Un usuario actualiza su información personal o cambia su contraseña.
+    \item \textbf{Cierre de sesión:} Un usuario cierra sesión de su cuenta de forma segura.
+\end{itemize}
+\clearpage
+\section{Stack Tecnologico}
+\subsection{Github}
+Plataforma para el control de versiones del proyecto, permitiendo un seguimiento detallado de los cambios y la colaboración entre desarrolladores.
+\subsection{Figma}
+Herramienta de diseño colaborativo utilizada para crear prototipos de la interfaz de usuario y definir la experiencia visual de la aplicación.
+\subsection{Java}
+Lenguaje de programación principal utilizado en el desarrollo del backend de la aplicación, garantizando robustez y escalabilidad.
+\subsection{JavaFx}
+Framework utilizado para construir la interfaz gráfica de usuario (GUI) en aplicaciones de escritorio, proporcionando una experiencia de usuario rica y interactiva.
+\subsection{IntelliJ IDEA}
+Entorno de desarrollo integrado (IDE) utilizado para escribir, depurar y ejecutar el código fuente en Java, mejorando la productividad del desarrollador.
+\subsection{Visual Studio Code}
+Editor de código fuente utilizado para editar archivos de configuración y otros lenguajes de programación, ofreciendo flexibilidad y ligereza en el desarrollo.
 
+\clearpage
 \end{document}
