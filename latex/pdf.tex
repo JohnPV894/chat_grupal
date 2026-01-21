@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+
+% --- Paquetes básicos ---
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+\usepackage{graphicx}
+
+\begin{document}
+
+% --- 1. PORTADA REDISEÑADA ---
+\begin{titlepage}
+    \centering
+    
+    % Título de mayor peso
+    \vspace*{3cm} 
+    {\Huge \textbf{PROGRAMACION DE SERVICIOS}} \\ 
+    \vspace{0.8cm}
+    
+    % Subtítulo (Actividad)
+    {\huge \textit{Chat Grupal}} \\ 
+    
+    \vspace{2cm}
+    \hrule % Línea divisoria
+    \vspace{2cm}
+    
+    % Información detallada
+    {\large
+    \begin{tabular}{ll}
+        \textbf{Estudiante:} & John Arenales Fernandez \\
+        \textbf{Profesor:}   & Roberto Castro Liste \\
+        \textbf{Año:}        & 2026 \\
+    \end{tabular}
+    }
+
+    \vfill 
+    
+    {\large Aula Estudio}
+    
+\end{titlepage}
+
+\clearpage % Salto a la siguiente página
+
+% --- 2. ÍNDICE (Automático de LaTeX) ---
+% Se coloca en su propia hoja como pediste originalmente
+\tableofcontents 
+\clearpage % Salto a la siguiente página
+
+% --- 3. CONTENIDO DE EJEMPLO ---
+% Aquí empieza el contenido real. Los números de página empezarán aquí.
+\section{Introducción}
+
+En la programación de servicios moderna, la comunicación entre aplicaciones es fundamental. Este proyecto implementa un \textbf{chat grupal en tiempo real} utilizando sockets y buffers, conceptos clave para entender cómo los sistemas se comunican a través de redes.
+
+Un \textbf{socket} es un punto final de comunicación que actúa como intermediario entre dos programas que desean intercambiar información. Específicamente, utilizamos sockets TCP (Transmission Control Protocol), que garantizan una conexión confiable y ordenada entre el servidor y los clientes. Estos sockets utilizan \textbf{buffers} para almacenar temporalmente los datos antes de ser procesados, permitiendo que la información fluya eficientemente sin pérdida.
+
+En esta práctica, implementamos una arquitectura cliente-servidor donde:
+
+\begin{itemize}
+    \item El \textbf{servidor} mantiene múltiples conexiones simultáneas con diferentes clientes
+    \item Cada \textbf{cliente} se conecta al servidor a través de un socket dedicado
+    \item Los \textbf{buffers} almacenan los mensajes entrantes y salientes
+    \item Los mensajes se distribuyen a todos los clientes conectados (broadcast)
+\end{itemize}
+
+Este proyecto nos permite aplicar y consolidar los conceptos fundamentales vistos en clase sobre:
+
+\begin{itemize}
+    \item Comunicación por sockets (TCP/IP)
+    \item Programación concurrente (manejo de múltiples hilos)
+    \item Operaciones de entrada/salida en redes
+    \item Sincronización entre procesos
+    \item Desarrollo de aplicaciones cliente-servidor
+\end{itemize}
+\clearpage
+ 
+
+\section{Descripcion del problema}
+Como desarrolladores independientes, hemos sido contactados por una empresa del sector de las redes sociales tras identificar una limitación crítica en su plataforma: la falta de una interacción fluida entre sus usuarios. Actualmente, la aplicación carece de un servicio de mensajería interna, lo que impide la comunicación directa, ya sea de forma privada o grupal. El objetivo del proyecto es diseñar e implementar un sistema de mensajería instantánea integrado, que garantice la plena identificación de los interlocutores y permita a los usuarios personalizar su identidad mediante nombres de usuario de su elección.
+
+
+\section{Conclusión}
+Final del trabajo.
+
+\end{document}
